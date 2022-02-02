@@ -4,18 +4,17 @@ function isPresent2d(arr2d, value){
     for (var i = 0; i < arr2d.length; i++){
         for (var j = 0; j < arr2d[i].length; j++){
             if(arr2d[i][j] == value){
-                console.log("true");
+               return true 
             }
-                else {
-                    console.log('false');
-                }
+              
         }
     }
+    return false
 }
 
-isPresent2d([ [1,2,3],
+console.log(isPresent2d([ [1,2,3],
               [3,7,8],
-              [9,8,6,5,4]], 6);
+              [9,8,5,4]], 6));
 
 // complete the following function
 function flatten(arr2d) {
